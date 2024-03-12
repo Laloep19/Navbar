@@ -4,13 +4,13 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "./syx.png"
 
+
+export default function Navbar() {
+    const [navbar, setNavbar] = useState(false);
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Nosotros', href: '/Us' },
   ];
-export default function Navbar() {
-    const [navbar, setNavbar] = useState(false);
-
     return (
         <nav className="bg-white fixed top-0 w-full shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
